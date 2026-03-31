@@ -1,0 +1,34 @@
+{
+  "name": "landing",
+  "description": "Landing page with hero, features, and CTA",
+  "capabilities": [],
+  "schema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "title": { "type": "string", "default": "My Product" },
+      "tagline": { "type": "string", "default": "Ship faster with Creek" },
+      "description": { "type": "string", "default": "Deploy full-stack apps to the edge in seconds." },
+      "ctaText": { "type": "string", "default": "Get Started" },
+      "ctaUrl": { "type": "string", "default": "#" },
+      "theme": { "type": "string", "enum": ["light", "dark"], "default": "dark" },
+      "accentColor": { "type": "string", "default": "#3b82f6" },
+      "features": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "title": { "type": "string" },
+            "description": { "type": "string" }
+          },
+          "required": ["title", "description"]
+        },
+        "default": [
+          { "title": "Fast", "description": "Deploy in seconds, not minutes" },
+          { "title": "Global", "description": "300+ edge locations worldwide" },
+          { "title": "Simple", "description": "One command to go live" }
+        ]
+      }
+    }
+  }
+}

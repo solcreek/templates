@@ -1,0 +1,11 @@
+{
+  "name": "my-app",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "creek dev",
+    "build": "echo 'No build step'",
+    "deploy": "creek deploy"
+  }
+}

@@ -1,0 +1,11 @@
+[project]
+name = "my-landing"
+
+[build]
+command = "npm run build"
+output = "dist"
+
+[resources]
+d1 = false
+kv = false
+r2 = false

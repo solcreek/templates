@@ -1,0 +1,14 @@
+{
+  "title": "My Product",
+  "tagline": "Ship faster with Creek",
+  "description": "Deploy full-stack apps to the edge in seconds.",
+  "ctaText": "Get Started",
+  "ctaUrl": "#",
+  "theme": "dark",
+  "accentColor": "#3b82f6",
+  "features": [
+    { "title": "Fast", "description": "Deploy in seconds, not minutes" },
+    { "title": "Global", "description": "300+ edge locations worldwide" },
+    { "title": "Simple", "description": "One command to go live" }
+  ]
+}

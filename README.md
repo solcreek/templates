@@ -52,7 +52,7 @@ Defines the template's metadata and customizable parameters via [JSON Schema](ht
 {
   "name": "landing",
   "description": "Landing page with hero, features, and CTA",
-  "capabilities": ["d1", "realtime"],
+  "capabilities": ["database", "realtime"],
   "schema": {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "type": "object",
@@ -68,7 +68,7 @@ Defines the template's metadata and customizable parameters via [JSON Schema](ht
 |-------|------|----------|-------------|
 | `name` | string | yes | Template identifier (must match directory name) |
 | `description` | string | yes | One-line description |
-| `capabilities` | string[] | yes | Creek resources used: `d1`, `kv`, `r2`, `ai`, `realtime` |
+| `capabilities` | string[] | yes | Creek resources used: `database`, `cache`, `storage`, `ai`, `realtime` |
 | `thumbnail` | string | no | URL or path to thumbnail (400x300) |
 | `screenshot` | string | no | URL or path to full screenshot |
 | `schema` | object | no | JSON Schema for customizable parameters |
@@ -118,9 +118,9 @@ command = "npm run build"
 output = "dist"
 
 [resources]
-d1 = false
-kv = false
-r2 = false
+database = false
+cache = false
+storage = false
 ```
 
 ### 3. Define the schema

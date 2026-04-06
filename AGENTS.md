@@ -46,10 +46,10 @@ A template is a directory with these files:
 
 Set `capabilities` to declare which Creek resources the template uses:
 
-- `"d1"` — D1 database (requires `worker/index.ts` with Hono)
-- `"kv"` — KV namespace
-- `"r2"` — R2 bucket
-- `"ai"` — Workers AI
+- `"database"` — Database (D1, requires `worker/index.ts` with Hono)
+- `"cache"` — Key-value cache (KV)
+- `"storage"` — Object storage (R2)
+- `"ai"` — AI inference
 - `"realtime"` — WebSocket via Creek Realtime
 
 ### Runtime config pattern
